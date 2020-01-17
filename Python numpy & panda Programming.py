@@ -34,7 +34,7 @@ elif b>a:
 
 
 import numpy as np
-
+from matplotlib import pyplot as plt #for visualization
 
 # In[12]:
 
@@ -187,5 +187,16 @@ pd.DataFrame(d2)
 # In[ ]:
 
 
+# NOW With data visvalization
 
+x=np.arange(1,11) #define your x-axis
+x
+y=2 * x #define y-axis
+y
+plt.plot(x,y ,color="orange", linewidth=3,linestyle=":") #color will change the color of line
+plt.title("LINE-PLOT") 
+plt.xlabel("x-Axis")
+plt.ylabel("y-Axis")
+plt.grid(True)
+plt.show()
 
